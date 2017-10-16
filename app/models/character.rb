@@ -3,16 +3,13 @@ class Character < ActiveRecord::Base
   belongs_to :show
 
   def catchphrase
-    if self.name == "Steve Urkel"
-      say_that_thing_you_say"Did I do that?"
-    else "I am not Steve Urkel and I did not do that"
-    end
+    say_that_thing_you_say
   end
 
   def say_that_thing_you_say
     if self.name == "Steve Urkel"
       "Did I do that?"
-    else 
+    else
       "I am not Steve Urkel and I did not do that"
     end
   end
