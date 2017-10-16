@@ -14,4 +14,7 @@ class Character < ActiveRecord::Base
     end
   end
 
+  def build_network
+    
+
 end
