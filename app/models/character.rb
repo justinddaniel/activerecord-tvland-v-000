@@ -9,5 +9,5 @@ class Character < ActiveRecord::Base
     else "I am not Steve Urkel and I did not do that"
     end
   end
-    
+
 end
