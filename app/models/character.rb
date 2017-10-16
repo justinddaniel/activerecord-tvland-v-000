@@ -4,8 +4,7 @@ class Character < ActiveRecord::Base
 
   def catchphrase
     if self.name == "Steve Urkel"
-      urkel.catchphrase = "Did I do that?"
-      urkel.catchphrase
+      "Did I do that?"
     else "I am not Steve Urkel and I did not do that"
     end
   end
